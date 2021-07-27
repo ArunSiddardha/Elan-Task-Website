@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #ffffffea;
+    font-family: sans-serif;
+}
+
+header{
+    position: absolute;
+}
+.logo_img{
+    position: relative;
+    height: 13vh;
+    left: 30px;
+    top : 30px;
+    
+}
+.navi{
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    right : 70px;
+    top :50px;
+    z-index: 100000;
+    cursor: pointer;
+
+}
+.line {
+    
+    width: 25px;
+    height: 3px;
+    background-color:white;
+    margin: 5px 0;
+    border-radius: 30px;
+}
+
+.row
+{
+    width: 60%;
+    margin:auto;
+    margin-bottom: 40px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+@media(max-width: 768px)
+{
+    .row{
+        width: 100%;
+    }
+}
+.profile-card
+{
+    position: relative;
+    background-color: #ffffff;
+    width: 530px;
+    height: 100px;
+    margin: 90px 10px 150px 10px;
+    transition: 0.4s ease-in-out;
+    border-radius: 100px;
+
+}
+
+.profile-content
+{
+    padding:15px;
+}
+.profile-image img{
+    position: relative;
+    border-radius: 100px;
+    width: 100%;
+   
+    top: -80px;
+
+}
+
+.profile-image
+{
+    text-align: center;
+    top: -90px;
+}
+.cdetail{
+    padding: 5%;
+    position: relative;
+    font-size: 3rem;;
+    font-weight: 500;
+    text-align: center;
+    color:black;
+    margin-top: -150px;
+    font-weight: 700;
+    font-family: 'Architects Daughter', cursive;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+} .profile-card:hover{
+    height: 150px;
+}
+.profile-card:hover .cdetail{
+    visibility: visible;
+    opacity: 1;
+    margin-top :-70px;
+}
+@media(max-width: 523px){
+    .img{
+        width: 400px;
+    }
+}
+#gail{
+    position: relative;
+    border-radius: 100px;
+    width: 80%;
+    top: -80px;
+}.nav-links{
+    position: fixed;
+    background:rgb(0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    z-index: 100;
+    clip-path: circle(50px at 90% -10%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 0.7s ease-out;
+    
+}
+.nav-links ul{
+   cursor: pointer;
+    display: flex;
+    position: relative;
+    top: 25%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    list-style: none;
+   margin: auto 0;
+    font-size: 4rem;
+    
+    
+}
+.nav-links ul li{
+    margin: 10px;
+    font-weight: 900;
+    color: blanchedalmond;
+    transition: 0.7s;
+    font-family: 'Notable', sans-serif;
+    
+    text-decoration: none;
+
+}
+.nav-links ul li:hover{
+    margin: 10px;
+    color: red;
+    font-size: 6rem;
+    padding: 20px;
+
+}
+#sponsor{
+    color: red;
+ }
+a{
+    text-decoration: none;
+}
+.nav-links.open{
+    clip-path: circle(2000px at 90% -10%);
+    -webkit-clip-path: circle(2000px at 90% -10%);
+    transition: all 0.7s ease-out;
+
+}
+.Events_main img
+{
+    position: absolute;
+    top :0;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.Events_main{
+
+    min-height: 100vh;
+    position: relative;
+}
+
+.content h1{
+    color: white;
+    font-size: 11rem;
+    letter-spacing: 0.1em;
+    font-family: 'Permanent Marker', cursive;
+    transform: rotateZ(-10deg);
+}
+.content{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:30vh;
+}
+@media(max-width: 768px)
+{
+    .content h1{
+        font-size: 5rem;
+    }
+}
